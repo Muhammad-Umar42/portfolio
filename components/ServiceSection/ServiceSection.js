@@ -36,35 +36,19 @@ const ServiceSection = (props) => {
                 <SectionTitle Title={'Our Services'} />
                 <div className="wpo-service-wrap">
                     <Nav tabs>
-                        {/* <NavItem>
+                        <NavItem>
                             <NavLink
                                 className={`${classnames({ active: activeTab === '1' })}`}
                                 onClick={() => { toggle('1'); }}
                             >
-                                Design
-                            </NavLink>
-                        </NavItem> */}
-                        <NavItem>
-                            <NavLink
-                                className={`${classnames({ active: activeTab === '2' })}`}
-                                onClick={() => { toggle('2'); }}
-                            >
                                 Development
                             </NavLink>
                         </NavItem>
-                        {/* <NavItem>
-                            <NavLink
-                                className={`${classnames({ active: activeTab === '3' })}`}
-                                onClick={() => { toggle('3'); }}
-                            >
-                                Marketing
-                            </NavLink>
-                        </NavItem> */}
                     </Nav>
                     <TabContent activeTab={activeTab}>
-                        {/* <TabPane tabId="1">
+                        <TabPane tabId="1">
                             <div className="row align-items-center">
-                                {Services.slice(0, 3).map((service, srv) => (
+                                {Services?.map((service, srv) => (
                                     <div className="col-lg-4 col-md-6 col-12" key={srv}>
                                         <div className="wpo-service-item">
                                             <div className="icon">
@@ -78,51 +62,10 @@ const ServiceSection = (props) => {
                                                 Learn More
                                             </Button>
                                         </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </TabPane> */}
-                        <TabPane tabId="2">
-                            <div className="row align-items-center">
-                                {Services.slice(3, 6).map((service, srv) => (
-                                    <div className="col-lg-4 col-md-6 col-12" key={srv}>
-                                        <div className="wpo-service-item">
-                                            <div className="icon">
-                                                <i className={`fi ${service.icon}`}></i>
-                                            </div>
-                                            <h2>{service.sTitle}</h2>
-                                            <p>{service.description}</p>
-                                            <Button
-                                                className="btn"
-                                                onClick={() => handleClickOpen(service)}>
-                                                Learn More
-                                            </Button>
-                                        </div>
-
                                     </div>
                                 ))}
                             </div>
                         </TabPane>
-                        {/* <TabPane tabId="3">
-                            <div className="row align-items-center">
-                                {Services.slice(6, 9).map((service, srv) => (
-                                    <div className="col-lg-4 col-md-6 col-12" key={srv}>
-                                        <div className="wpo-service-item">
-                                            <div className="icon">
-                                                <i className={`fi ${service.icon}`}></i>
-                                            </div>
-                                            <h2>{service.sTitle}</h2>
-                                            <p>{service.description}</p>
-                                            <Button
-                                                className="btn"
-                                                onClick={() => handleClickOpen(service)}>
-                                                Learn More
-                                            </Button>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </TabPane> */}
                     </TabContent>
                 </div>
             </div>
