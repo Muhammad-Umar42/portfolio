@@ -62,7 +62,7 @@ const ServiceSection = (props) => {
                         </NavItem> */}
                     </Nav>
                     <TabContent activeTab={activeTab}>
-                        <TabPane tabId="1">
+                        {/* <TabPane tabId="1">
                             <div className="row align-items-center">
                                 {Services.slice(0, 3).map((service, srv) => (
                                     <div className="col-lg-4 col-md-6 col-12" key={srv}>
@@ -81,7 +81,7 @@ const ServiceSection = (props) => {
                                     </div>
                                 ))}
                             </div>
-                        </TabPane>
+                        </TabPane> */}
                         <TabPane tabId="2">
                             <div className="row align-items-center">
                                 {Services.slice(3, 6).map((service, srv) => (
@@ -102,7 +102,7 @@ const ServiceSection = (props) => {
                                 ))}
                             </div>
                         </TabPane>
-                        <TabPane tabId="3">
+                        {/* <TabPane tabId="3">
                             <div className="row align-items-center">
                                 {Services.slice(6, 9).map((service, srv) => (
                                     <div className="col-lg-4 col-md-6 col-12" key={srv}>
@@ -121,7 +121,7 @@ const ServiceSection = (props) => {
                                     </div>
                                 ))}
                             </div>
-                        </TabPane>
+                        </TabPane> */}
                     </TabContent>
                 </div>
             </div>
