@@ -33,7 +33,7 @@ const ServiceSection = (props) => {
     return (
         <div className={`wpo-service-area section-padding ${props.sClass}`} id='service'>
             <div className="container">
-                <SectionTitle Title={'Our Services'} />
+                <SectionTitle Title={'Services'} />
                 <div className="wpo-service-wrap">
                     <Nav tabs>
                         <NavItem>
